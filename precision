@@ -1,0 +1,19 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+int main() {
+float y = 23.1415;
+cout.precision(1);
+cout << y << endl; // Outputs 2e+01
+cout.precision(2);
+cout << y << endl; // Outputs 23
+cout.precision(3);
+cout << y << endl; // Outputs 23.1
+double f =3.14159;
+cout << setprecision(5) << f << endl;
+cout << setprecision(9) << f << endl;
+cout << fixed;
+cout << setprecision(5) << f << endl;
+cout << setprecision(9) << f << endl;
+return 0;
+}
