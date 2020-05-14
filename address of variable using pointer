@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() 
+{
+    int a,*p,**q;
+    p=&a;
+    q=&p;
+    printf("Enter any number ");
+    scanf("%d",&a);
+    printf("value of a = %d\n",a);
+    printf("value of p = %d\n",&a);
+    printf("address of a = %d\n",p);
+    printf("address of p = %d",q);
+    
+    return 0;
+}
