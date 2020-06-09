@@ -1,0 +1,44 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class Animal
+{
+	public:
+		void speak()
+		{
+			cout<<"grrrrrrrr"<<endl;
+		}
+};
+
+class Cat:public Animal
+{
+	public:
+		void sound()
+		{
+			cout<<"meauuuoooo"<<endl;
+		}
+};
+
+class Tiger:public Cat
+{
+	public:
+		void attack()
+		{
+			cout<<"attacking"<<endl;
+		}
+};
+
+int main()
+{
+	Animal a;
+	a.speak();
+	
+	Cat c;
+	c.speak();
+	c.sound();
+	
+	Tiger t;
+	t.speak();
+	t.sound();
+	t.attack();
+}
