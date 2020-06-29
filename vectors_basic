@@ -1,0 +1,52 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int>a;//creater a vector a
+    vector<int>b(5,10);//5 integers in the array an have value 10
+    vector<int>c(b.begin(),b.end());//copy elements 
+    vector<int>d{1,2,3,4,5};//give elements to the vector
+    
+    
+    //iterate over the vector
+    for(int i=0;i<c.size();i++)
+    {
+        cout<<c[i]<<" ";            //first way
+    }
+    cout<<endl;
+    
+    
+    for(auto it=b.begin();it!=b.end();it++)
+    {
+            cout<<(*it)<<" ";       //second way
+    }
+    cout<<endl;
+    
+    
+    //for each loop
+    for(int x:d)
+    {               
+        cout<<x<<" ";               //third way
+    }
+    
+    
+    vector<int>v;
+    cout<<endl<<"Enter number of elements ";
+    int n;cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        int no;
+        cin>>no;
+        v.push_back(no);
+    }
+    
+    for(int x:v)
+    {
+        cout<<x<<" ";
+    }
+    
+    
+    cout<<v.size()<<endl;//size 
+    cout<<v.capacity()<<endl;//size of underlying array 
+    cout<<v.max_size()<<endl;
+}
